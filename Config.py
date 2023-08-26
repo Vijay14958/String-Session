@@ -4,7 +4,7 @@ ENVIRONMENT = os.environ.get('ENVIRONMENT', False)
 
 if ENVIRONMENT:
     try:
-        API_ID = int(os.environ.get('API_ID', '27639102'))
+        API_ID = int(os.environ.get('API_ID', '20389440'))
     except ValueError:
         raise Exception("Your API_ID is not a valid integer.")
     API_HASH = os.environ.get('API_HASH', None)
@@ -17,10 +17,10 @@ if ENVIRONMENT:
         MUST_JOIN = MUST_JOIN.replace("@", "")
 else:
     # Fill the Values
-    API_ID = "27639102"
-    API_HASH = "35142c1407be6264e68fb6bec5dcabd9"
-    BOT_TOKEN = "6191852838:AAGhdLDw8R0rxaF68K7OefX5ks5fLH0iV0k"
-    DATABASE_URL = "mongodb+srv://Forward123:Forward123@cluster0.4d1ljfv.mongodb.net/?retryWrites=true&w=majority"
+    API_ID = "20389440"
+    API_HASH = "a1a06a18eb9153e9dbd447cfd5da2457"
+    BOT_TOKEN = "6564513574:AAF1dwXAmMGbLFEIyb_eHGow9Q_561bWf2U"
+    DATABASE_URL = "mongodb+srv://sushankm16:4i1WAfPYKWyqPIDD@cluster0.sngp9pz.mongodb.net/?retryWrites=true&w=majority"
     DATABASE_URL = DATABASE_URL.replace("postgres", "postgresql")
     MUST_JOIN = "@VJ_Bots"
     if MUST_JOIN.startswith("@"):
